@@ -10,7 +10,7 @@
                  <ul class="list_item">
                     <li class="nav_item" 
                     v-for="(item, i) in mainItems" :key="i">
-                        <img :src="item.img" alt="#">                    
+                        <img src="../assets/img/buy-comics-digital-comics.png" alt="#">                   
                         <a href="#">{{item.title}}</a>
                     </li>
                 </ul>
@@ -26,7 +26,7 @@ export default {
             title:'-->Content goes here<--',
              mainItems: [
                 {
-                    img:'../assets/img/buy-comics-digital-comics.png',
+                    img:'buy-comics-digital-comics.png',
                     title: 'DIGITAL COMICS',
                     
                 },
