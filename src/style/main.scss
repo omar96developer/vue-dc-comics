@@ -1,1 +1,40 @@
 @import "variables.scss";
+.main_section1 {
+    background-color: #1c1c1c;
+   
+    .container_section1{
+        width: 1200px;
+        height: 100px; 
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        h2 {
+            color: white;
+        }
+    }  
+}
+
+.main_section2 { 
+    background-color: #0282f9;
+
+    .container_section2 {
+        width: 1200px;
+        height: 100px; 
+        margin: auto;
+        display: flex;
+        align-items: center;
+        
+        .list_item {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            img {
+                height: 50px;
+            }
+        }
+    }
+
+
+}
