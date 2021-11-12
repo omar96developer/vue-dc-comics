@@ -7,10 +7,10 @@
         </section>
         <section class="main_section2">
             <div class="container_section2">
-                 <ul class="list_item">
-                    <li class="nav_item" 
+                 <ul class="list_items">
+                   <li class="list_item" 
                     v-for="(item, i) in mainItems" :key="i">
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="#">                   
+                        <img :src="require(`../assets/img/${item.img}`)" alt="#">                   
                         <a href="#">{{item.title}}</a>
                     </li>
                 </ul>
@@ -27,24 +27,23 @@ export default {
              mainItems: [
                 {
                     img:'buy-comics-digital-comics.png',
-                    title: 'DIGITAL COMICS',
-                    
+                    title: 'DIGITAL COMICS',  
                 },
                 {
+                    img:'buy-comics-merchandise.png',
                     title: 'DC MERCHANDISE',
-                   
                 },
                 {
+                    img:'buy-comics-subscriptions.png',
                     title: 'SUBSCRIPTION',
-                    
                 },
                 {
-                    title: 'COMIC SHOP LOCATOR',
-                    
+                    img:'buy-comics-shop-locator.png',
+                    title: 'COMIC SHOP LOCATOR', 
                 },
                 {
-                    title: 'DC POWER VISA',
-                    
+                    img:'buy-dc-power-visa.svg',
+                    title: 'DC POWER VISA', 
                 }
             ],
             

@@ -3,7 +3,6 @@
     <Header></Header>
     <Main></Main>
     <Footer></Footer>
-
   </div>
 </template>
 
@@ -18,8 +17,7 @@ export default {
   components: {
    Header,
    Main,
-   Footer
-    
+   Footer 
   }
 }
 </script>
