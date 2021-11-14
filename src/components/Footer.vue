@@ -31,12 +31,7 @@
                         </div>
                     </div>
 
-                    <div class="footer1_img">
-                        <div class="footer_logo">
-                            <img src="@/assets/img/dc-logo-bg.png" alt="#">
-                        </div>
-                        
-                    </div>
+                    
                 </section>
             </div>
         </div>

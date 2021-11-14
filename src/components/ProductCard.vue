@@ -6,8 +6,8 @@
             <p>Prezzo: {{prezzo}}</p>
             <p>Tipo: {{tipo}}</p>
         </div>
+        
     </div>  
-    
 </template>
 
 <script>

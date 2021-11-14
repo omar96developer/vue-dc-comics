@@ -1,7 +1,10 @@
 <template>
     <main>
         <section class="main_section1">
+            
             <div class="container_section1">
+                <div class="serie">CURRENT SERIES</div>
+               
                 <ProductCard v-for="(card, i) in cards" :key="i"
                 :immagine='card.thumb'
                 :titolo='card.series'
@@ -9,6 +12,10 @@
                 :tipo='card.type'
                 >
                 </ProductCard>
+               
+            </div>
+            <div class="load">
+                <a href="#">LOAD MORE</a>
             </div>
         </section>
         <section class="main_section2">

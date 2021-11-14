@@ -1,13 +1,18 @@
 @import "variables.scss";
-.footer_container_1 {
+
+.footer_container_1 {    
     background-image: url(assets/img/footer-bg.jpg);
+
     .footer_container_A {
         width: 1200px;
         height: 400px;
         display: flex;
         flex-direction: column;
         margin: auto;
-    
+        background-image: url(assets/img/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        
         .footer1 {
             height: 400px;
             width: 100%;
@@ -15,8 +20,9 @@
     
             .footer1_list {
                 height: 100%;
-                width: 500px;
+                width: 600px;
                 display: flex;
+                padding: 20px 0;
     
                 .list{
     
@@ -32,6 +38,8 @@
                         li{
                             line-height: 25px;
                             cursor: pointer;
+                            color: #708391;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -39,17 +47,7 @@
                 
             }
     
-            .footer1_img{
-                height: 100%;
-                width: 700px;
-                display: flex;
-                justify-content: flex-end;
-                
-                img {
-                    height: 100%;
-                }
-    
-            } 
+            
         }
     }
 }
