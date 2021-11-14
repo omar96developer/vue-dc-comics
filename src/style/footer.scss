@@ -61,6 +61,45 @@
         display: flex;
         border: 1px solid white;
         margin: auto;
-        color: white v ;
+        color: white;
+        
+        .footer2 {
+            display: flex;
+            width: 100%;
+            .signup {
+                height: 100%;
+                width: 50%;
+                border: 1px solid white;
+                display: flex;
+                text-align: start;
+                align-items: center;
+
+                a{
+                    color: white;
+                    border: 3px solid #0282f9;
+                    padding: 10px;
+                    text-decoration: none;
+                }
+            }
+            .follow {
+                height: 100%;
+                width: 50%;
+                border: 1px solid white;
+                color: #0282f9;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                h4 {
+                    margin-right: 10px;
+                }
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin: 10px;
+                }
+
+            }
+        }
+
     }
 }

@@ -9,48 +9,24 @@
 
                             <h3>DC COMICS</h3>
                             <ul>
-                                <li>Characters</li>
-                                <li>Comics</li>
-                                <li>Movies</li>
-                                <li>TV</li>
-                                <li>Games</li>
-                                <li>Videos</li>
-                                <li>News</li>
+                                <li v-for="(value, i) in dccomic" :key="i">{{value}}</li>                                
                             </ul>
 
                             <h3>SHOP</h3>
                             <ul>
-                                <li>Shop DC</li>
-                                <li>Shop DC Collectables</li>
-                                
+                                <li v-for="(value, i) in shop" :key="i">{{value}}</li>                                
                             </ul>
                         </div>
                         <div class="list">
                             <h3>DC</h3>
                             <ul>
-                                <li>Terms Of Use</li>
-                                <li>Privacy policy (New)</li>
-                                <li>Ad Choices</li>
-                                <li>Advertsing</li>
-                                <li>Jobs</li>
-                                <li>Subscriptions</li>
-                                <li>Talent Workshops</li>
-                                <li>CPRSC Certificates</li>
-                                <li>Rating</li>
-                                <li>Shop Help</li>
-                                <li>Contact Us</li>
-                                
+                                <li v-for="(value, i) in dc" :key="i">{{value}}</li>                               
                             </ul>
                         </div>
                         <div class="list">
                             <h3>SITES</h3>
                             <ul>
-                                <li>DC</li>
-                                <li>MAD Magazine</li>
-                                <li>DC Kids</li>
-                                <li>DC Universe</li>
-                                <li>DC Power Visa</li>
-                                
+                                <li v-for="(value, i) in sites" :key="i">{{value}}</li>
                             </ul>
                         </div>
                     </div>
@@ -67,7 +43,20 @@
         <div class="footer_container_2">
             <div class="footer_container_B">
                 <section class="footer2">
-                    
+                    <div class="signup">
+                        <a href="#">
+                            SIGN-UP NOW!
+                        </a>
+                    </div>
+                    <div class="follow">
+                        <h3>FOLLOW US</h3>
+                        <img src="@/assets/img/footer-facebook.png" alt="#">
+                        <img src="@/assets/img/footer-twitter.png" alt="#">
+                        <img src="@/assets/img/footer-youtube.png" alt="#">
+                        <img src="@/assets/img/footer-pinterest.png" alt="#">
+                        <img src="@/assets/img/footer-periscope.png" alt="#">
+
+                    </div>
                 </section>
             </div>
         </div>
@@ -76,7 +65,44 @@
 </template>
 <script>
 export default {
-    name: "Footer"
+    name: "Footer",
+    data(){
+        return {
+           dccomic: {
+                li1: 'Characters',
+                li2: 'Comics',
+                li3: 'Movies',
+                li4: 'TV',
+                li5: 'Games',
+                li6: 'Videos',
+                li7: 'News'
+           },
+           shop: {
+                li1: 'Shop DC',
+                li2: 'Shop DC Collectables'
+           },
+           dc: {
+                li1: 'Terms Of Use',
+                li2: 'Privacy policy (New)',
+                li3: 'Ad Choices',
+                li4: 'Advertsing',
+                li5: 'Jobs',
+                li6: 'Subscriptions',
+                li7: 'Talent Workshops',
+                li8: 'CPRSC Certificates',
+                li9: 'li1:Rating',
+                li10: 'Shop Help',
+                li111: 'Contact Us'
+           },
+           sites:{
+                li1: 'DC',
+                li2: 'MAD Magazine',
+                li3: 'DC Kids',
+                li4: 'DC Universe',
+                li5: 'DC Power Visa'
+           }
+        }
+    }
     
 }
 
